@@ -31,6 +31,5 @@ module Api
         render json: { errors: cart.errors.full_messages }, status: :unprocessable_entity
       end
     end
-
   end
 end
