@@ -1,0 +1,13 @@
+# frozen_string_literal: true
+
+{
+  code: product.code,
+  name: product.name,
+  description: product.description,
+  price: product.price,
+  weight: product.weight,
+  store: render('api/stores/store', store: product.store),
+  variants: product.variants.collect do |variant|
+    render('api/variants/variant', variant: variant)
+  end
+}

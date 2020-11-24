@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+
+{
+  code: 200,
+  messages: ['Success'],
+  length: @carts.size,
+  data: @carts.collect do |store, carts|
+    {
+      code: store.code,
+      name: store.name,
+      products: carts.collect do |cart|
+        render('api/carts/product', cart: cart)
+      end
+    }
+  end
+}

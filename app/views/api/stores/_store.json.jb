@@ -1,0 +1,8 @@
+# frozen_string_literal: true
+
+{
+  code: store.code,
+  name: store.name,
+  address: store.address,
+  phone: store.phone
+}

@@ -1,15 +1,14 @@
 # == Schema Information
 #
-# Table name: stores
+# Table name: orders
 #
-#  id         :bigint           not null, primary key
-#  name       :string
-#  address    :string
-#  phone      :string
-#  deleted_at :datetime
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  code       :string
+#  id          :bigint           not null, primary key
+#  user_id     :bigint
+#  number      :string
+#  total_price :decimal(12, 2)
+#  status      :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
 #
 
 # This model initially had no columns defined. If you add columns to the

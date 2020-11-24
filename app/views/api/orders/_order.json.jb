@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+{
+  id: order.id,
+  number: order.number,
+  total_price: order.total_price,
+  status: order.status,
+  items: order.order_items.collect do |item|
+    render('api/order_items/order_item', item: item)
+  end
+}

@@ -18,4 +18,10 @@ class ApiController < ActionController::API
       render json: { errors: e.message }, status: :unauthorized
     end
   end
+
+  def current_user
+    return nil if @current_user.blank?
+
+    @current_user
+  end
 end

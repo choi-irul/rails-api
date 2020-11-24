@@ -1,0 +1,21 @@
+# frozen_string_literal: true
+
+product = cart.product
+variant = cart.variant
+
+{
+  id: cart.id,
+  quantity: cart.quantity,
+  product: {
+    code: product.code,
+    name: product.name,
+    description: product.description,
+    price: product.price,
+    weight: product.weight
+  },
+  variant: {
+    code: variant.code,
+    name: variant.name,
+    description: variant.description
+  }
+}

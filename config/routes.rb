@@ -10,9 +10,13 @@ Rails.application.routes.draw do
         post 'login', to: 'authentication#login'
       end
     end
+
+    resources :products, only: %w[index]
+    resources :carts, only: %w[index create update]
+    resources :orders, only: %w[create] do
+      collection do
+        get 'list', to: 'orders#order_list'
+      end
+    end
   end
-
-
-  # post '/auth/login', to: 'authentication#login'
-  # get '/*a', to: 'application#not_found'
 end

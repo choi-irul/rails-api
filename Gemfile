@@ -61,3 +61,7 @@ gem 'jwt'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'acts_as_paranoid', '~> 0.7.0'
+
+# gem 'fast_jsonapi'
+gem 'jb'
+gem 'jbuilder', '~> 2.7'

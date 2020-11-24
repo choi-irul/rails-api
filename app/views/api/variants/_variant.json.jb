@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+
+{
+  code: variant.code,
+  name: variant.name,
+  description: variant.description
+}

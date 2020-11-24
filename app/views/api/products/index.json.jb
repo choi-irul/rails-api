@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+
+{
+  code: 200,
+  messages: ['Success'],
+  length: @products.size,
+  data: @products.collect do |product|
+    render('api/products/product', product: product)
+  end
+}

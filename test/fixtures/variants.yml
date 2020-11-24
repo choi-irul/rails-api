@@ -1,15 +1,13 @@
 # == Schema Information
 #
-# Table name: stores
+# Table name: variants
 #
-#  id         :bigint           not null, primary key
-#  name       :string
-#  address    :string
-#  phone      :string
-#  deleted_at :datetime
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  code       :string
+#  id          :bigint           not null, primary key
+#  name        :string
+#  description :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  code        :string
 #
 
 # This model initially had no columns defined. If you add columns to the
